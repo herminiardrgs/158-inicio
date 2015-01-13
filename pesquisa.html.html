@@ -1,0 +1,41 @@
+<html>
+		<head>
+			<title>pesquisa</title>
+			<link type="text/css" rel="stylesheet" href="estilo-pesquisa.css" />
+
+		</head>
+		<body>
+
+			<!--
+			exemplo de efeito pesquisa como
+			https://www.goincase.com/
+		-->
+		<P></P>
+
+
+		<div class="menu">
+			products devices designed for featured syndct 
+			<a href="javascript:abrepesq()">pesquisa</a>
+		</div>
+		<div class="pesquisa">
+			<form>
+				<input type="text" name="pesqtext" id="pesqtext">
+				<span class="close">X</span>
+			</form>
+		</div>
+
+		<script src="jquery-1.11.1.js"></script>
+		<script type="text/javascript">
+		function abrepesq(){
+			$('.menu').hide('slow');
+		}
+		$('.close') .click( function(){
+		$('.menu').show('slow');	;
+		});
+
+
+		</script>
+			
+		</body>
+
+</html>
